@@ -40,7 +40,7 @@ editFormDOM.addEventListener("submit", async (e) => {
         name: taskName,
         completed: taskCompleted,
       })
-      .then((val) => val.data.updateTask);
+      .then((val) => val.data.task);
 
     const { _id: taskID, completed, name } = task;
 
